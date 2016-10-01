@@ -1,0 +1,19 @@
+{
+  "name": "ov-vimeo",
+  "version": "0.0.0",
+  "appPath": "src",
+  "main": [
+    "./dist/ov-vimeo.js"
+  ],
+  "dependencies": {
+    "angular": "~1.5.8",
+    "vimeo-player-js": "git://github.com/vimeo/player.js.git"
+  },
+  "devDependencies": {
+    "angular": "~1.5.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/arpercussion/ov-vimeo.git"
+  }
+}
