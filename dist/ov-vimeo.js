@@ -6,7 +6,7 @@
  * Vimeo IFrame Embed API Angular wrapper
  * For options see: https://github.com/vimeo/player.js
  */
-angular.module('ov.directives')
+angular.module('ov.directives', [])
     .constant('VM_STATUS', {
         ENDED: 0,
         PLAYING: 1,
@@ -65,7 +65,7 @@ angular.module('ov.directives')
                         title: scope.title || true,
                         width: scope.width
                     },
-                    player = new Vimeo.Player(element, options),
+                    player = new Vimeo.Player(element[0], options),
                     onPlay = function (/*data*/) {
                         o.status = VM_STATUS.PLAYING;
                         scope.onStatusChanged(o);
@@ -213,5 +213,6 @@ angular.module('ov.directives')
             }
         };
     }]);
+
 
 })();
